@@ -1,0 +1,81 @@
+{
+	"name": "dataflow_for_select",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "source_CSV",
+						"type": "DatasetReference"
+					},
+					"name": "sourceCSV"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					},
+					"name": "sink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "selectcolum"
+				},
+				{
+					"name": "sort"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          ProductKey as integer,",
+				"          OrderDateKey as date,",
+				"          CustomerKey as integer,",
+				"          SalesOrderNumber as string,",
+				"          OrderQuantity as string,",
+				"          UnitPrice as integer,",
+				"          ProductStandardCost as string,",
+				"          TotalProductCost as string,",
+				"          SalesAmount as integer,",
+				"          TaxAmt as integer,",
+				"          Freight as string,",
+				"          CarrierTrackingNumber as integer,",
+				"          CustomerPONumber as integer,",
+				"          OrderDate as date,",
+				"          DueDate as date,",
+				"          ShipDate as date",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> sourceCSV",
+				"sourceCSV select(mapColumn(",
+				"          ProductKey,",
+				"          CustomerKey,",
+				"          UnitPrice,",
+				"          ProductStandardCost,",
+				"          TotalProductCost,",
+				"          SalesAmount,",
+				"          TaxAmt,",
+				"          Freight",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> selectcolum",
+				"selectcolum sort(asc(UnitPrice, true),",
+				"     caseInsensitive: true) ~> sort",
+				"sort sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> sink"
+			]
+		}
+	}
+}

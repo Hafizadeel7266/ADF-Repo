@@ -1,0 +1,780 @@
+{
+	"name": "wafa",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream"
+				},
+				{
+					"dataset": {
+						"referenceName": "Department_Source",
+						"type": "DatasetReference"
+					},
+					"name": "departmentStream"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream1"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream2"
+				},
+				{
+					"dataset": {
+						"referenceName": "Department_Source",
+						"type": "DatasetReference"
+					},
+					"name": "DeparmentStream2"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream3"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream5"
+				},
+				{
+					"dataset": {
+						"referenceName": "Department_Source",
+						"type": "DatasetReference"
+					},
+					"name": "DeparmentStream5"
+				},
+				{
+					"dataset": {
+						"referenceName": "ITEmployee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "ITEmployeeSrteam"
+				},
+				{
+					"dataset": {
+						"referenceName": "HR_Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "HREmployeeSrteam"
+				},
+				{
+					"dataset": {
+						"referenceName": "Payroll_Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "PayrollEmployeeSrteam"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream7"
+				},
+				{
+					"dataset": {
+						"referenceName": "Department_Source",
+						"type": "DatasetReference"
+					},
+					"name": "DepartmentStream7"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream8"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream9"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream10"
+				},
+				{
+					"dataset": {
+						"referenceName": "Department_Source",
+						"type": "DatasetReference"
+					},
+					"name": "DeparmantStream10"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee_Source",
+						"type": "DatasetReference"
+					},
+					"name": "EmployeeStream11"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee1_source",
+						"type": "DatasetReference"
+					},
+					"name": "Employee1Stream"
+				},
+				{
+					"dataset": {
+						"referenceName": "Employee1_source",
+						"type": "DatasetReference"
+					},
+					"name": "Employee1Stream1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "outputSink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "outputPayroll"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "ITsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "HRsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Payrollsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "othersink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "DerivedSink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "DataExistes"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Unionsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Lookupsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "ordersink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Selectsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Branchsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Branchsink1"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Surrogatesink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "windowsink"
+				},
+				{
+					"dataset": {
+						"referenceName": "output",
+						"type": "DatasetReference"
+					},
+					"name": "Ranksink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "EmployeejoinDepartment"
+				},
+				{
+					"name": "filterPayroll"
+				},
+				{
+					"name": "aggregateOnDep"
+				},
+				{
+					"name": "joinOnDep"
+				},
+				{
+					"name": "selectStream"
+				},
+				{
+					"name": "HREmployee"
+				},
+				{
+					"name": "derivedColumn"
+				},
+				{
+					"name": "Rowexists"
+				},
+				{
+					"name": "union"
+				},
+				{
+					"name": "lookup"
+				},
+				{
+					"name": "sort"
+				},
+				{
+					"name": "select"
+				},
+				{
+					"name": "aggregate"
+				},
+				{
+					"name": "joinDeparment"
+				},
+				{
+					"name": "surrogateKey"
+				},
+				{
+					"name": "window"
+				},
+				{
+					"name": "rank"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream",
+				"source(output(",
+				"          Department_Name as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> departmentStream",
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream1",
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream2",
+				"source(output(",
+				"          Department_Name as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> DeparmentStream2",
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream3",
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as integer",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream5",
+				"source(output(",
+				"          Department_Name as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> DeparmentStream5",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> ITEmployeeSrteam",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> HREmployeeSrteam",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> PayrollEmployeeSrteam",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream7",
+				"source(output(",
+				"          Department_Name as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> DepartmentStream7",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream8",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream9",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream10",
+				"source(output(",
+				"          Department_Name as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> DeparmantStream10",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Id as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> EmployeeStream11",
+				"source(output(",
+				"          Emp_Id as integer,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Name as string,",
+				"          Salary as integer,",
+				"          Gender as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> Employee1Stream",
+				"source(output(",
+				"          Emp_Id as string,",
+				"          Name as string,",
+				"          Country as string,",
+				"          Department_Name as string,",
+				"          Salary as string,",
+				"          Gender as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> Employee1Stream1",
+				"EmployeeStream, departmentStream join(EmployeeStream@Department_Id == departmentStream@Department_Id,",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> EmployeejoinDepartment",
+				"EmployeeStream1 filter(equals(Department_Id,3)) ~> filterPayroll",
+				"EmployeeStream2 aggregate(groupBy(Department_Id),",
+				"     TotalEmployee = count(Emp_Id)) ~> aggregateOnDep",
+				"aggregateOnDep, DeparmentStream2 join(aggregateOnDep@Department_Id == DeparmentStream2@Department_Id,",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> joinOnDep",
+				"joinOnDep select(mapColumn(",
+				"          Department_Id = aggregateOnDep@Department_Id,",
+				"          Department_Name,",
+				"          TotalEmployee",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> selectStream",
+				"EmployeeStream3 split(equals(Department_Id, 1),",
+				"     equals(Department_Id, 2),",
+				"     equals(Department_Id, 3),",
+				"     disjoint: false) ~> HREmployee@(ITEmployee, HREmployee, PayrollEmployee, OtherEmployee)",
+				"source1 derive(Country = upper(Country),",
+				"          CountryCode = left(Country, 3),",
+				"          Country_Update = iif(isNull(Country), \"Unknoun_Country\", Country)) ~> derivedColumn",
+				"EmployeeStream5, DeparmentStream5 exists(EmployeeStream5@Department_Id == DeparmentStream5@Department_Id,",
+				"     negate:false,",
+				"     broadcast: 'auto')~> Rowexists",
+				"ITEmployeeSrteam, HREmployeeSrteam, PayrollEmployeeSrteam union(byName: true)~> union",
+				"EmployeeStream7, DepartmentStream7 lookup(EmployeeStream7@Department_Id == DepartmentStream7@Department_Id,",
+				"     multiple: false,",
+				"     pickup: 'any',",
+				"     broadcast: 'auto')~> lookup",
+				"EmployeeStream8 sort(asc(Name, true),",
+				"     caseInsensitive: true) ~> sort",
+				"EmployeeStream9 select(mapColumn(",
+				"          Emp_Id,",
+				"          Department_Id,",
+				"          Name,",
+				"          Country",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select",
+				"EmployeeStream10 aggregate(groupBy(Department_Id),",
+				"     Total_Employee = count(Emp_Id)) ~> aggregate",
+				"EmployeeStream10, DeparmantStream10 join(EmployeeStream10@Department_Id == DeparmantStream10@Department_Id,",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> joinDeparment",
+				"EmployeeStream11 keyGenerate(output(Employee_SK as long),",
+				"     startAt: 1L,",
+				"     stepValue: 1L) ~> surrogateKey",
+				"Employee1Stream window(over(Department_Name),",
+				"     asc(Salary, true),",
+				"     AvgSalary = avg(Salary),",
+				"          Rank = rank(),",
+				"          DenseRank = denseRank(),",
+				"          Row_Number = rowNumber(),",
+				"          MInimum_Salary = min(Salary)) ~> window",
+				"Employee1Stream1 rank(asc(Department_Name, true),",
+				"     caseInsensitive: true,",
+				"     output({Rank column} as long)) ~> rank",
+				"EmployeejoinDepartment sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['EmployeejoinDepartment.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          Emp_Id,",
+				"          Name,",
+				"          Country,",
+				"          Department_Id = EmployeeStream@Department_Id,",
+				"          Department_Name",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> outputSink",
+				"filterPayroll sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['filterPayroll.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> outputPayroll",
+				"selectStream sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Aggregation_Employee-join-Department.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          Department_Id,",
+				"          Department_Name,",
+				"          TotalEmployee",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> sink1",
+				"HREmployee@ITEmployee sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['IT_Employee.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> ITsink",
+				"HREmployee@HREmployee sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['HR_Employee.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> HRsink",
+				"HREmployee@PayrollEmployee sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Payroll_Employee.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> Payrollsink",
+				"HREmployee@OtherEmployee sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Other_Employee.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> othersink",
+				"derivedColumn sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Update_Add_Column.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> DerivedSink",
+				"Rowexists sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Data_Exiists_NotExists.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> DataExistes",
+				"union sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['union.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> Unionsink",
+				"lookup sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Lookup.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> Lookupsink",
+				"sort sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['order.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> ordersink",
+				"select sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Select.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> Selectsink",
+				"joinDeparment sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Branch_Join.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          Emp_Id,",
+				"          Name,",
+				"          Country,",
+				"          Department_Id = EmployeeStream10@Department_Id,",
+				"          Department_Name",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> Branchsink",
+				"aggregate sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Branch_Aggregate.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          Department_Id,",
+				"          Total_Employee",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> Branchsink1",
+				"surrogateKey sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Surrogate_Ke.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          Employee_SK,",
+				"          Emp_Id,",
+				"          Name,",
+				"          Country,",
+				"          Department_Id",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> Surrogatesink",
+				"window sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['window.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> windowsink",
+				"rank sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Rank.csv'],",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> Ranksink"
+			]
+		}
+	}
+}

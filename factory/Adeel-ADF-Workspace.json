@@ -1,0 +1,9 @@
+{
+	"name": "Adeel-ADF-Workspace",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8b028547-70c4-46ce-8f51-d3afc0d3701b",
+		"tenantId": "e7f4e791-730e-44d2-8069-11b4e1abb41b"
+	}
+}

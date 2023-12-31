@@ -1,0 +1,18 @@
+{
+	"name": "Labtop_SQL_Server_Linked_Services",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "AdventureWorksDW2022",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=DESKTOP-RIQUQ0K\\SQLEXPRESS;initial catalog=AdventureWorksDW2022",
+			"userName": "DESKTOP-RIQUQ0K\\HP",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2YzBjM2I0My05MzExLTQzOTMtOWY3OS1iMDg0YmU1NTNiODciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SH-IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
